@@ -1,0 +1,274 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tech curve task</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="tableDiv" id="tableDiv">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <div id="mySidenav" class="sidenav">
+      <div class="dnone">
+        <a href="javascript:void(0)" style="font-size: 30px; cursor: pointer;" class="closebtn" onclick="closeNav()">&times;</a>
+        <nav>
+          <ul>
+            <li class="text-center sclass"><a class="navNav" href="#">
+                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                <span class="nav-item">Email Module</span>
+              </a></li>
+            <div class="main-div">
+              <li class="text-center cclass"><a href="#">
+                  <span class="icon"><i class="fa-solid fa-chart-bar"></i></span>
+                  <span class="nav-item">Audience</span>
+                </a></li>
+              <li class="text-center"><a href="#">
+                  <span class="nav-item">All Contact</span>
+                </a></li>
+              <li class="text-center"><a href="#">
+                  <span class="nav-item">Email Subscriber</span>
+                </a></li>
+              <hr><br>
+              <li class="text-center cclass"><a href="#">
+                  <span class="icon"><i class="fa-brands fa-megaport"></i></span>
+                  <span class="nav-item">Campaign</span>
+                </a></li>
+              <li class="text-center"><a href="#">
+                  <span class="nav-item">All Campaign List </span>
+                </a></li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+      <div class="boo">
+        <a href="#dnone">
+          <button class="btn import dblock" onclick="dblock();">Import contact</button>
+        </a>
+      </div>
+      <div class="boo" style="border-bottom: 1px solid;">
+      </div>
+      <!-- popup -->
+      <div id="userPopup" class="popup">
+        <div class="popup-content">
+          <span class="close-button" onclick="closePopup()">&times;</span>
+          <h2>User Details</h2>
+          <div id="popupContent"></div>
+        </div>
+      </div>
+      <!--  -->
+      <div style="overflow-x:auto ;">
+        <table id="customers">
+          <tr class="user-row">
+            <caption>Filter By Email Category</caption>
+            <th></th>
+            <th>Email Address</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone No</th>
+            <th>Email Category</th>
+            <th>Register Date</th>
+
+          </tr>
+          <tbody class="tbody">
+
+          </tbody>
+           <tr class="user-row">
+            <td><input type="checkbox"></td>
+            <td>intern1conqut@gmail.com</td>
+            <td>intern1</td>
+            <td>Techcurve</td>
+            <td>7789645632</td>
+            <td style="text-align: center;"><button class="emailBtn">ERP</button></td>
+            <td>04-27-2022</td>
+
+          </tr>
+          <tr class="user-row">
+            <td><input type="checkbox"></td>
+            <td>intern1conqut@gmail.com</td>
+            <td>intern1</td>
+            <td>Techcurve</td>
+            <td>7789645632</td>
+            <td style="text-align: center;"><button class="emailBtn">CRM</button></td>
+            <td>04-27-2022</td>
+          </tr>
+          <tr class="user-row">
+            <td><input type="checkbox"></td>
+            <td>intern1conqut@gmail.com</td>
+            <td>intern1</td>
+            <td>Techcurve</td>
+            <td>7789645632</td>
+            <td style="text-align: center;"><button class="emailBtn">ERP</button></td>
+            <td>04-27-2022</td>
+          </tr>
+          <tr class="user-row">
+            <td><input type="checkbox"></td>
+            <td>intern1conqut@gmail.com</td>
+            <td>intern1</td>
+            <td>Techcurve</td>
+            <td>7789645632</td>
+            <td style="text-align: center;"><button class="emailBtn">CLOUD</button></td>
+            <td>04-27-2022</td>
+          </tr>
+          <tr class="user-row">
+            <td><input type="checkbox"></td>
+            <td>intern1conqut@gmail.com</td>
+            <td>intern1</td>
+            <td>Techcurve</td>
+            <td>7789645632</td>
+            <td style="text-align: center;"><button class="emailBtn">Server</button></td>
+            <td>04-27-2022</td>
+          </tr>
+          <tr class="user-row">
+            <td><input type="checkbox"></td>
+            <td>intern1conqut@gmail.com</td>
+            <td>intern1</td>
+            <td>Techcurve</td>
+            <td>7789645632</td>
+            <td style="text-align: center;"><button class="emailBtn">VMS</button></td>
+            <td>04-27-2022</td>
+          </tr>
+          <tr class="user-row">
+            <td><input type="checkbox"></td>
+            <td>intern1conqut@gmail.com</td>
+            <td>intern1</td>
+            <td>Techcurve</td>
+            <td>7789645632</td>
+            <td style="text-align: center;"><button class="emailBtn">CRM</button></td>
+            <td>04-27-2022</td>
+          </tr>
+          <tr class="user-row">
+            <td class="checkbox" id="checkbox"><input type="checkbox"></td>
+            <td>intern1conqut@gmail.com</td>
+            <td>intern1</td>
+            <td>Techcurve</td>
+            <td>7789645632</td>
+            <td style="text-align: center;"><button class="emailBtn">SAP</button></td>
+            <td>04-27-2022</td>
+          </tr> 
+          <!-- <tr>
+          <td><input type="checkbox"></td>
+          <td>intern1conqut@gmail.com</td>
+          <td>intern1</td>
+          <td>Techcurve</td>
+          <td>7789645632</td>
+          <td style="text-align: center;"><button class="emailBtn">ERP</button></td>
+          <td>04-27-2022</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>intern1conqut@gmail.com</td>
+          <td>intern1</td>
+          <td>Techcurve</td>
+          <td>7789645632</td>
+          <td style="text-align: center;"><button class="emailBtn">ERP</button></td>
+          <td>04-27-2022</td>
+        </tr> -->
+        </table>
+      </div>
+      <footer>
+        <!-- pagination starts -->
+        <div class="pagin">
+          <div class="pagination">
+            <a href="#">&laquo; Prev</a>
+            <a >1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Next &raquo;</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <!-- ////// -->
+  <div class="dnone" id="dnone"> 
+    <!-- form-heading -->
+     <div class="main-form">
+      <div class="form">
+        <div class="left-form">
+          <h1>intern1 Techcurve</h1>
+        </div>
+        <div class="right-form">
+          <div class="btn-con"><button class="btn-Ac">Action <i class="fa-solid fa-angle-down"></i></button>
+          </div>
+        </div>
+       
+
+       </div> 
+       <!-- form-heading close -->
+      <!-- edit section start -->
+      <div class="re-form">
+        <div class="edit">
+          <p>Edit</p>
+          <div class="edit-icon"><i class="fa-solid fa-xmark"></i></div>
+          <!-- edit section end -->
+
+        </div>
+        <div class="input-form-start">
+          <div class="first-column">
+            <div class="first-name">
+              <label for="first-name">First Name</label>
+              <input type="text" id="fname" class="input" placeholder="First Name">
+            </div>
+            <div class="first-name">
+              <label for="first-name">Last Name</label>
+              <input type="text" id="lname" class="input" placeholder="Last Name">
+            </div>
+
+            <div class="first-name">
+              <label for="first-name">Email Address</label>
+              <input type="text" id="eaddress" class="input" placeholder="Email Address">
+            </div>
+            <div class="first-name">
+              <label for="first-name">Phone No</label>
+              <input type="text" id="pnumber" class="input" placeholder="Phone No">
+            </div>
+          </div>
+          <div class="second-column">
+            <div class="first-name">
+              <label for="first-name">Email Category</label>
+              <input type="text" id="ecategoty" class="input" placeholder="Email Category">
+            </div>
+            <div class="first-name">
+              <label for="first-name">Source</label>
+              <input type="text" class="input" placeholder="Source">
+            </div>
+            <div class="first-name">
+              <label for="first-name">Company</label>
+              <input type="text" class="input" placeholder="Company">
+            </div>
+            <div class="first-name">
+              <label for="first-name">Register Date</label>
+              <input type="text" id="rdate" class="input" placeholder="Register Date">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- input form button -->
+        <div class="button-div">
+          <div class="button-left-right">
+            <div  class="button-1 btn-common"><button onclick="addHtmlTableRow();"><a
+                  href="#tableDiv">save</a></button></div>
+            <div class="button-2 btn-common"><button>cancel</button></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+  <!-- <script src="script2.js"></script> -->
+
+
+
+</body>
+
+</html>
